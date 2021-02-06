@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2886574A2569231800896F54 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288657492569231800896F54 /* CoreData.framework */; };
-		288E04FC25692FC100E21004 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E04FB25692FC100E21004 /* Toast.swift */; };
 		288E0503256932A200E21004 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E0502256932A200E21004 /* HomeVC.swift */; };
 		28AB6867256917CF00524E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB6866256917CF00524E45 /* AppDelegate.swift */; };
 		28AB6869256917CF00524E45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB6868256917CF00524E45 /* SceneDelegate.swift */; };
@@ -19,13 +18,13 @@
 		28AB687F25691AF600524E45 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB687E25691AF600524E45 /* LoginVC.swift */; };
 		28AB688125691B0200524E45 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB688025691B0200524E45 /* SignUpVC.swift */; };
 		28AB688425691E1A00524E45 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB688325691E1A00524E45 /* Constant.swift */; };
+		28B16A9325C5691400765BB1 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B16A9225C5691400765BB1 /* Toast.swift */; };
 		28DA0239256A4CBD009273C6 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA0237256A4CBD009273C6 /* User+CoreDataClass.swift */; };
 		28DA023A256A4CBD009273C6 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA0238256A4CBD009273C6 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		288657492569231800896F54 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		288E04FB25692FC100E21004 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = "../../../ThetaTechnolabs_Practical/Varsha_ThetaTechnolabs/Helper Classes/Toast.swift"; sourceTree = "<group>"; };
 		288E0502256932A200E21004 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		28AB6863256917CE00524E45 /* CoreData_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AB6866256917CF00524E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		28AB687E25691AF600524E45 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		28AB688025691B0200524E45 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		28AB688325691E1A00524E45 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		28B16A9225C5691400765BB1 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		28DA0237256A4CBD009273C6 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		28DA0238256A4CBD009273C6 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				28AB688325691E1A00524E45 /* Constant.swift */,
-				288E04FB25692FC100E21004 /* Toast.swift */,
+				28B16A9225C5691400765BB1 /* Toast.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -207,10 +207,10 @@
 				28AB6867256917CF00524E45 /* AppDelegate.swift in Sources */,
 				28AB687F25691AF600524E45 /* LoginVC.swift in Sources */,
 				28AB688125691B0200524E45 /* SignUpVC.swift in Sources */,
-				288E04FC25692FC100E21004 /* Toast.swift in Sources */,
 				28DA0239256A4CBD009273C6 /* User+CoreDataClass.swift in Sources */,
 				28AB6869256917CF00524E45 /* SceneDelegate.swift in Sources */,
 				288E0503256932A200E21004 /* HomeVC.swift in Sources */,
+				28B16A9325C5691400765BB1 /* Toast.swift in Sources */,
 				28DA023A256A4CBD009273C6 /* User+CoreDataProperties.swift in Sources */,
 				28AB688425691E1A00524E45 /* Constant.swift in Sources */,
 			);

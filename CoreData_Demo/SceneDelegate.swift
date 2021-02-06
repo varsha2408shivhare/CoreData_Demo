@@ -27,7 +27,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         if scene is UIWindowScene {
-            
+            if User.currentUserEmail() != ""{
+                let tabBarStoryboard = UIStoryboard(name:"Main", bundle: nil)
+                let vc = tabBarStoryboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+                let navVC = UINavigationController(rootViewController: vc)
+                self.window?.rootViewController = navVC
+                
+            }else{
+                let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                let ViewController = mainStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+                let navVC = UINavigationController(rootViewController: ViewController)
+                self.window?.rootViewController = navVC
+                
+            }
         }
     }
 

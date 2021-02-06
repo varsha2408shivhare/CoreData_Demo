@@ -24,4 +24,26 @@ public class User: NSManagedObject {
         
     }
     
+    static func currentUserData() -> User {
+        var current_user = User()
+        let res = try! context.fetch(userFetchRequest)
+        if res.count > 0 {
+            current_user = res[0] as! User
+            return current_user
+        }else{
+            return current_user
+        }
+    }
+    
+    static func currentUserEmail() -> String {
+        var current_email = ""
+        let res = try! context.fetch(userFetchRequest)
+        if res.count > 0 {
+            current_email = (res[0] as! User).email ?? ""
+            return current_email
+        }else{
+            return current_email
+        }
+    }
+    
 }

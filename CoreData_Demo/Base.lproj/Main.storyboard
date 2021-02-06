@@ -292,24 +292,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is home screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0b-sN-3hE">
-                                <rect key="frame" x="130.5" y="437.5" width="153" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0b-sN-3hE">
+                                <rect key="frame" x="20" y="104" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="cyx-wC-BsR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD3-aa-bax">
+                                <rect key="frame" x="20" y="150" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Q0-4B-Mvu">
+                                <rect key="frame" x="90" y="97.5" width="304" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Td7-6w-Tw6">
+                                <rect key="frame" x="90" y="143.5" width="304" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpL-CA-ixm">
+                                <rect key="frame" x="40" y="242.5" width="147" height="45"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.62352941179999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DkM-My-Xgz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="EDIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionEdit:" destination="nHh-fA-kH1" eventType="touchUpInside" id="WfC-Qa-Op8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1U-Ca-sqv">
+                                <rect key="frame" x="227" y="242.5" width="147" height="45"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bdQ-TV-E9q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="DELETE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionDelete:" destination="nHh-fA-kH1" eventType="touchUpInside" id="IvZ-dL-iB5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="e0b-sN-3hE" firstAttribute="centerY" secondItem="C14-Gv-Sn2" secondAttribute="centerY" id="O6R-Xy-QOU"/>
-                            <constraint firstItem="e0b-sN-3hE" firstAttribute="centerX" secondItem="C14-Gv-Sn2" secondAttribute="centerX" id="Ugv-iW-0Nl"/>
+                            <constraint firstItem="O1U-Ca-sqv" firstAttribute="width" secondItem="rpL-CA-ixm" secondAttribute="width" id="0jG-OD-MMa"/>
+                            <constraint firstItem="Td7-6w-Tw6" firstAttribute="leading" secondItem="xD3-aa-bax" secondAttribute="trailing" constant="10" id="1dE-5B-0cQ"/>
+                            <constraint firstItem="xD3-aa-bax" firstAttribute="leading" secondItem="e0b-sN-3hE" secondAttribute="leading" id="6Nu-XA-EIH"/>
+                            <constraint firstItem="1Q0-4B-Mvu" firstAttribute="leading" secondItem="e0b-sN-3hE" secondAttribute="trailing" constant="10" id="6Th-g1-UcE"/>
+                            <constraint firstItem="PB0-4j-Pdr" firstAttribute="trailing" secondItem="O1U-Ca-sqv" secondAttribute="trailing" constant="40" id="BGB-aJ-eyu"/>
+                            <constraint firstItem="PB0-4j-Pdr" firstAttribute="trailing" secondItem="Td7-6w-Tw6" secondAttribute="trailing" constant="20" id="F04-HZ-MGB"/>
+                            <constraint firstItem="O1U-Ca-sqv" firstAttribute="top" secondItem="rpL-CA-ixm" secondAttribute="top" id="JsL-oj-rVz"/>
+                            <constraint firstItem="O1U-Ca-sqv" firstAttribute="height" secondItem="rpL-CA-ixm" secondAttribute="height" id="P4q-yZ-wVe"/>
+                            <constraint firstItem="rpL-CA-ixm" firstAttribute="top" secondItem="Td7-6w-Tw6" secondAttribute="bottom" constant="65" id="PVQ-9Z-zmJ"/>
+                            <constraint firstItem="e0b-sN-3hE" firstAttribute="top" secondItem="PB0-4j-Pdr" secondAttribute="top" constant="60" id="Por-RR-Q2X"/>
+                            <constraint firstItem="O1U-Ca-sqv" firstAttribute="leading" secondItem="rpL-CA-ixm" secondAttribute="trailing" constant="40" id="XG1-35-rfh"/>
+                            <constraint firstItem="PB0-4j-Pdr" firstAttribute="trailing" secondItem="1Q0-4B-Mvu" secondAttribute="trailing" constant="20" id="XRn-Rz-aP3"/>
+                            <constraint firstItem="e0b-sN-3hE" firstAttribute="leading" secondItem="PB0-4j-Pdr" secondAttribute="leading" constant="20" id="aM2-0Y-ryH"/>
+                            <constraint firstItem="xD3-aa-bax" firstAttribute="width" secondItem="e0b-sN-3hE" secondAttribute="width" id="b5H-QT-83c"/>
+                            <constraint firstItem="1Q0-4B-Mvu" firstAttribute="centerY" secondItem="e0b-sN-3hE" secondAttribute="centerY" id="dle-bP-kZd"/>
+                            <constraint firstItem="rpL-CA-ixm" firstAttribute="leading" secondItem="PB0-4j-Pdr" secondAttribute="leading" constant="40" id="vRP-UY-SSB"/>
+                            <constraint firstItem="Td7-6w-Tw6" firstAttribute="centerY" secondItem="xD3-aa-bax" secondAttribute="centerY" id="wTm-mP-dA2"/>
+                            <constraint firstItem="xD3-aa-bax" firstAttribute="top" secondItem="e0b-sN-3hE" secondAttribute="bottom" constant="25" id="y6B-H2-4Bs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PB0-4j-Pdr"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="Td7-6w-Tw6" id="jNQ-oT-FQI"/>
+                        <outlet property="txtName" destination="1Q0-4B-Mvu" id="rqJ-Y3-eA2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muY-p2-NnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2350" y="-4"/>
+            <point key="canvasLocation" x="2349.275362318841" y="-4.0178571428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gcp-9H-T9d">
